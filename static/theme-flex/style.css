@@ -1103,6 +1103,7 @@ article section.page img.inline {
   vertical-align: bottom; }
 article section.page code {
   font-family: "RobotoMono", monospace;
+  word-break: break-word;
 }
 article section.page p > code,
 article section.page li code,
