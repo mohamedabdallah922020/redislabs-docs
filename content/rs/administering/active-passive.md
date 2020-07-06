@@ -19,10 +19,12 @@ synchronize the database, either within RS or external to RS, to another databas
 [Active-Active Geo-Distribution (CRDB)]({{< relref "/rs/administering/active-active.md" >}})
 provides these benefits and also provides write access to all of the database replicas.
 
-**Warning:** Configuring a database as a replica of the database that it replicates
+{{< warning >}}
+Configuring a database as a replica of the database that it replicates
 creates a cyclical replication and is not supported.
+{{< /warning >}}
 
-The *Replica of* is defined in the context of the destination database
+The Replica Of is defined in the context of the destination database
 by specifying the source databases.
 
 A destination database can have a maximum of thirty-two (32) source
@@ -36,13 +38,15 @@ result, commands that were executed in a certain order when compared
 across source databases might be executed in a different order on the
 destination database.
 
-**Note:** The *Replica of* feature should not be confused with the
+{{< note >}}
+The Replica Of feature should not be confused with the
 in-memory [Database
 replication]({{< relref "/rs/concepts/high-availability/replication.md" >}})
 feature, which is used for creating a master / slave configuration that
 enables ensuring database high-availability.
+{{< /note >}}
 
-For a quick overview of ReplicaOf capabilities watch this quick video.
+For a quick overview of Replica Of capabilities watch this quick video.
 
 {{< youtube AG-XGn7BQkQ >}}
 
@@ -70,7 +74,7 @@ or by the system - the user can restart the process. **Restarting the
 process causes the synchronization process to flush the DB and restart
 the process from the beginning**.
 
-### Replica of status
+### Replica Of status
 
 The replication process can have the following statuses:
 
@@ -93,9 +97,11 @@ the source was executed on the destination.
 The system also displays the destination database status as an aggregate
 of the statuses of all the sources.
 
-**Note:** If you encounter issues with the *Replica of* process, refer
-to the troubleshooting section [Replica of repeatedly
+{{< note >}}
+If you encounter issues with the Replica Of process, refer
+to the troubleshooting section [Replica Of repeatedly
 fails]({{< relref "/rs/administering/troubleshooting/replicaof-repeatedly-fails.md" >}}).
+{{< /note >}}
 
 ### Synchronization errors
 
@@ -127,13 +133,13 @@ stop:
 
 ## Encryption
 
-ReplicaOf supports the ability to encrypt uni-directional replication
+Replica Of supports the ability to encrypt uni-directional replication
 communications between source and destination clusters utilizing TLS 1.2
 based encryption.
 
 ## Data Compression for Replica Of
 
-When the *Replica of* is defined across different Redis Enterprise
+When the Replica Of is defined across different Redis Enterprise
 Software clusters, it may be beneficial to compress the data that flows
 through the network (depending on where the clusters physically reside
 and the available network).
@@ -161,7 +167,7 @@ It is advised that you test compression out in a lower environment
 before enabling it in production.
 
 In the Redis Enterprise Software management UI, when designating a
-*Replica of* source from a different Redis Enterprise Software cluster,
+Replica Of source from a different Redis Enterprise Software cluster,
 there is also an option to enable compression. When enabled, gzip
 compression with level -6 is utilized.
 
