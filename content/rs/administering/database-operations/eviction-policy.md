@@ -28,7 +28,7 @@ manage what data is hot and should be in RAM and what data is not and
 can be on Flash memory (SSD).
 
 Note: [Geo-Distributed
-CRDBs]({{< relref "/rs/administering/active-active.md" >}})
+CRDBs]({{< relref "/rs/administering/designing-production/active-active.md" >}})
 always operate in noeviction mode.
 
 Warning: Some redis Modules do not fully support eviction or all

@@ -6,7 +6,7 @@ alwaysopen: false
 categories: ["RS"]
 aliases: /rs/administering/database-operations/create-crdb/
 ---
-[Active-Active replicated databases]({{< relref "/rs/administering/active-active.md" >}}) (also known as CRDBs) give applications write access
+[Active-Active replicated databases]({{< relref "/rs/administering/designing-production/active-active.md" >}}) (also known as CRDBs) give applications write access
 to replicas of the data set in different geographical locations.
 
 The participating clusters that host the instances can be in [distributed geographic locations]({{< relref "/rs/concepts/intercluster-replication.md" >}}).
@@ -24,7 +24,7 @@ Every instance of a CRDB can receive write operations, and all operations are [s
 
 - Two or more machines with the same version of RS installed
 - Network connectivity and cluster FQDN name resolution between all participating clusters
-- [Network time service]({{< relref "/rs/administering/active-active.md#network-time-service-ntp-or-chrony" >}}) listener (ntpd) configured and running on each node in all clusters
+- [Network time service]({{< relref "/rs/administering/designing-production/active-active.md#network-time-service-ntp-or-chrony" >}}) listener (ntpd) configured and running on each node in all clusters
 
 ## Creating a CRDB
 

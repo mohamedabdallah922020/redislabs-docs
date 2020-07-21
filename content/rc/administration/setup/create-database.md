@@ -38,7 +38,7 @@ Once you have a subscription, you can easily create a database in Redis Cloud by
             to expose the cluster topology to your application.
         - Select **Use external endpoint** to let clients connect to the OSS cluster
             API throught the external endpoint.
-    1. By default, **Replica Of** is disabled. You can enable [Replica Of]({{< relref "/rs/administering/active-passive.md" >}})
+    1. By default, **Replica Of** is disabled. You can enable [Replica Of]({{< relref "/rs/administering/designing-production/active-passive.md" >}})
         and select the endpoint of a database to hold a copy of the data.
 
         {{< note >}}

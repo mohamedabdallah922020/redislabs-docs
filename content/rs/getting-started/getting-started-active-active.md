@@ -22,7 +22,7 @@ set up two RS installations and continue from Step 2.
 {{< note >}}
 This getting started guide is for development or demonstration environments.
 To set up CRDB in a production environment, use the instructions for
-[creating a CRDB]({{< relref "/rs/administering/database-operations/create-active-active.md" >}}).
+[creating a CRDB]({{< relref "/rs/administering/creating-databases/create-active-active.md" >}}).
 {{< /note >}}
 
 ## Step 1: Run Two Containers

@@ -39,7 +39,7 @@ To enable TLS for Replica Of communication only on the source database:
     clients can connect to your database without authentication.
 
     To encrypt Replica Of synchronization traffic, you must also [configure encryption
-    for the destination database]({{< relref "/rs/administering/active-passive.md#encryption" >}}).
+    for the destination database]({{< relref "/rs/administering/designing-production/active-passive.md#encryption" >}}).
 
 ### Configuring encryption for all communication on the source database
 
