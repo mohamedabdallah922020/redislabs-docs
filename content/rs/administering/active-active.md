@@ -26,7 +26,7 @@ A CRDB is made up of instances of the data that are each stored on an RS cluster
 Before configuring a CRDB, you must:
 
 - If the CRDB spans a WAN, establish a VPN between each networks that hosts a cluster with a CDRB instance.
-- Setup [RS clusters]({{< relref "/rs/administering/cluster-operations/new-cluster-setup.md" >}}) for each CRDB instance.
+- Setup [RS clusters]({{< relref "/rs/administering/new-cluster-setup.md" >}}) for each CRDB instance.
 
     All clusters must have the same RS version.
 - Configure [FQDNs in a DNS server]({{< relref "/rs/installing-upgrading/configuring/cluster-name-dns-connection-management/_index.md" >}}) for connections to the cluster.

@@ -1,10 +1,11 @@
 ---
-Title: Creating a Redis Enterprise Software (RS) Database
+Title: Creating a Redis Enterprise Software Database
 description:
-weight: $weight
+weight: 30
 alwaysopen: false
 categories: ["RS"]
 db_type: database
+aliases: /rs/administering/creating-database.md
 ---
 You can create Redis databases that are sharded and distributed across a single RS cluster.
 These databases can use Redis Enterprise features like:

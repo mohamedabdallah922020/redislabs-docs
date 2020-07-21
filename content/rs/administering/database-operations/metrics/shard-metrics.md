@@ -15,7 +15,7 @@ two detailed graphs at the top of the page, as follows:
         replication]({{< relref "/rs/concepts/high-availability/replication.md" >}}) is
         enabled), or shards that take part of a clustered database (for
         additional details, refer to [Database
-        clustering]({{< relref "/rs/administering/cluster-operations/new-cluster-setup.md" >}}).
+        clustering]({{< relref "/rs/administering/new-cluster-setup.md" >}}).
         The shard name refers to the shard role (whether master or
         slave).
         Each small shard graph also lists the node it is located on, and
